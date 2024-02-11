@@ -1,0 +1,13 @@
+.SearchButton {
+    margin: 0px 5px;
+    cursor: pointer;
+}
+
+.SearchBar {
+    margin: 10px 0px 20px 0px; /* Space below the search bar */
+}
+
+.SearchBar input {
+    width: 300px;
+    margin-right: 5px;
+}

@@ -66,9 +66,9 @@ class App extends Component {
           <div clasName="SearchResults">
               <SearchResults searchResults={this.state.searchResults} onAdd={this.addTrack} />
             </div>
-            <div className="Playlist">
+            <div className="PlaylistResults">
               <Playlist playlistName={this.state.playlistName} playlistTracks={this.state.playlistTracks} onRemove={this.removeTrack} onNameChange={this.updatePlaylistName} onSave={this.savePlaylist} />
-            </div>
+              </div>
           </div>
         </div>
       </div>
