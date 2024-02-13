@@ -50,7 +50,10 @@ class App extends Component {
 
   search(term) {
     Spotify.search(term).then(searchResults => {
-      this.setState({ searchResults: searchResults });
+      const filteredResults = searchResults.filter(searchResult =>
+        !this.state.playlistTracks.find(playlistTrack => playlistTrack.id === searchResult.id)
+      );
+      this.setState({ searchResults: filteredResults });
     });
   }
 
